@@ -1,0 +1,442 @@
+body {
+    background-image: url("./components/resources/taki_logo.png");
+    background-color: #e0e1db;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game {
+}
+
+#stock {
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    margin: -55px 0 0 -75px;
+}
+
+#openDeck {
+}
+
+#foldDeck {
+}
+
+.infoPic {
+    margin-left: 5px;
+}
+
+#myTurn {
+    font-weight: 900;
+    border: red solid;
+    border-radius: 20px;
+}
+
+.playerCards {
+    display: flex;
+    justify-content: center;
+}
+
+#player_1 {
+    position: absolute;
+    height: 140px;
+    width: 450px;
+    left: 50%;
+    margin: 40px 0 0 -225px;
+    text-align: center;
+}
+
+#player_1 > #change_color {
+    position: absolute;
+    height: 130px;
+    width: 90px;
+    left: 50%;
+    margin: 0 0 0 -65px;
+}
+
+#player_2 {
+    position: absolute;
+    height: 140px;
+    width: 450px;
+    top: 50%;
+    margin: -70px 0 0 0;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+#player_2 > #change_color {
+    position: absolute;
+    height: 130px;
+    width: 90px;
+    left: 50%;
+    margin: 0 0 0 -65px;
+}
+
+#player_3 {
+    position: absolute;
+    height: 140px;
+    width: 450px;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 110px -225px;
+    text-align: center;
+}
+
+#player_3 > #change_color {
+    position: absolute;
+    height: 130px;
+    width: 90px;
+    left: 50%;
+    margin: 0 0 0 -65px;
+}
+
+#player_4 {
+    position: absolute;
+    width: 450px;
+    height: 140px;
+    top: 50%;
+    right: 0;
+    margin: -70px 0 0 0;
+    text-align: center;
+    transform: rotate(270deg);
+}
+
+#player_4 > #change_color {
+    position: absolute;
+    height: 130px;
+    width: 90px;
+    left: 50%;
+    margin: 0 0 0 -65px;
+}
+
+#tableCreation {
+    padding: 15px;
+    border-radius: 20px;
+    align-self: center;
+    align-items: center;
+    background: #4CAF50;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #bbbcb8;
+    color: #f9faf5;
+    border-radius: 20px;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+.radio {
+    padding-left: 20px;
+}
+
+.card {
+    height: 95px;
+    margin: -13px;
+}
+
+@media all and (max-width: 1150px), (max-height: 600px) {
+    .card {
+        height: 70px;
+    }
+}
+
+.mycard:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    border-style: groove;
+    background-color: #d0f3e8;
+    border-color: #d0f3e8;
+    margin: 0 3px;
+    border-radius: 20px;
+}
+
+.table-base-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-base-container .user-info-area {
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.login-page-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-wrapper .taki-logo {
+    padding-top: 20px;
+    width: 280px;
+}
+
+.login-page-wrapper .username-label {
+    margin: 0 5px;    
+    font-size: 18px;
+}
+
+.login-page-wrapper .username-input {    
+    font-size: 16px;
+    line-height: 16px;
+    margin: 1px;
+    border: 1px solid #ccc;   
+}
+
+.login-page-wrapper .submit-btn:hover {
+    background-color: #cadcff;
+    border-color: #cadcff;
+}
+
+.login-error-message {
+    color: red;
+    font-weight: 600;
+}
+
+#tableSizeOptions {
+    display: flex;
+    flex-direction: row;
+}
+
+.table-contaier {
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-contaier .converssion-area-wrpper {
+    flex-grow: 1;
+}
+
+#tables {
+    text-align: center;
+}
+
+#users {
+    text-align: center;
+}
+
+
+
+.chat-contaier .converssion-area-wrpper p{
+    margin: 0 0 8px 0;
+}
+
+.table-contaier .table-input-wrapper {
+    margin-bottom: 8px;
+}
+
+.table-contaier .table-input-wrapper input{
+    line-height: 16px;
+    font-size: 16px;
+    margin: 1px;
+    padding: 8px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.table-contaier .table-input-wrapper .btn {
+    flex-grow: 0;
+    width: 88px;
+    margin: 0 2px 0 5px;
+}
+
+#red_cube {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+}
+
+#blue_cube {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 2;
+}
+
+#yellow_cube {
+    position: absolute;
+    top: 28px;
+    left: 46px;
+    z-index: 3;
+}
+
+#green_cube {
+    position: absolute;
+    top: 63px;
+    left: 21px;
+    z-index: 4;
+}
+
+#endGamePopup {
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.endGamePopup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+#gameButtons {
+    padding-left: 10px;
+}
+
+#popupButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.endGamePopupButton {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.endGamePopupButton:hover,
+.endGamePopupButton:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.endGamePopup-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.endGamePopup-body {
+    padding: 2px 16px;
+}
+
+#tableTables {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tableTables td, #tableTables th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tableTables tr:nth-child(odd){background-color: #b5b6b1;}
+#tableTables tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableTables tr:hover {background-color: #4CAF50;}
+
+#tableTables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#waitingForPlayers {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background: #4CAF50;
+    border: #377837;
+    border-style: solid;
+}
+
+
+
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    font-size: 10px;
+    visibility: hidden;
+    width: 170px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -85px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
